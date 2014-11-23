@@ -20,11 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - JNKeychain (0.1.1)
+  - XMLReader-PPTV (1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - JNKeychain
+  - XMLReader-PPTV
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  JNKeychain: 2a17bd938a538d50349df563f5b543b9e932045d
+  XMLReader-PPTV: 97d736815a9955fa88ea66ae735791bc53125a83
 
 COCOAPODS: 0.35.0
