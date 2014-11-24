@@ -94,6 +94,12 @@
 }
 */
 
+
+- (IBAction)reloadClients:(id)sender {
+    [self loadDataSource];
+}
+
+
 /*
 #pragma mark - Navigation
 

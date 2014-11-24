@@ -15,6 +15,7 @@
 		A034FC781A221CA20010040D /* BSClientsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC771A221CA20010040D /* BSClientsDataSource.m */; };
 		A034FC7C1A2221FE0010040D /* BSClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC7B1A2221FE0010040D /* BSClientData.m */; };
 		A034FC801A222B660010040D /* NSDictionary+CheckObjectClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC7F1A222B660010040D /* NSDictionary+CheckObjectClass.m */; };
+		A034FC841A2233710010040D /* BSClientDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */; };
 		A06389CA1A1E816800AF84C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06389C91A1E816800AF84C6 /* main.m */; };
 		A06389CD1A1E816900AF84C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06389CC1A1E816900AF84C6 /* AppDelegate.m */; };
 		A06389D61A1E816900AF84C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06389D41A1E816900AF84C6 /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 		A034FC7B1A2221FE0010040D /* BSClientData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientData.m; sourceTree = "<group>"; };
 		A034FC7E1A222B660010040D /* NSDictionary+CheckObjectClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CheckObjectClass.h"; sourceTree = "<group>"; };
 		A034FC7F1A222B660010040D /* NSDictionary+CheckObjectClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CheckObjectClass.m"; sourceTree = "<group>"; };
+		A034FC821A2233710010040D /* BSClientDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClientDetailsTableViewController.h; sourceTree = "<group>"; };
+		A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientDetailsTableViewController.m; sourceTree = "<group>"; };
 		A06389C41A1E816800AF84C6 /* Blinksale-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinksale-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06389C81A1E816800AF84C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06389C91A1E816800AF84C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				A034FC6F1A221C080010040D /* BSClientsTableViewController.h */,
 				A034FC701A221C080010040D /* BSClientsTableViewController.m */,
+				A034FC821A2233710010040D /* BSClientDetailsTableViewController.h */,
+				A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */,
 				A034FC761A221CA20010040D /* BSClientsDataSource.h */,
 				A034FC771A221CA20010040D /* BSClientsDataSource.m */,
 			);
@@ -363,6 +368,7 @@
 				A06389CD1A1E816900AF84C6 /* AppDelegate.m in Sources */,
 				A034FC6E1A22122C0010040D /* BSLoginViewController.m in Sources */,
 				A06389CA1A1E816800AF84C6 /* main.m in Sources */,
+				A034FC841A2233710010040D /* BSClientDetailsTableViewController.m in Sources */,
 				A034FC631A20C4C10010040D /* BSNetworking.m in Sources */,
 				A034FC7C1A2221FE0010040D /* BSClientData.m in Sources */,
 				A034FC801A222B660010040D /* NSDictionary+CheckObjectClass.m in Sources */,

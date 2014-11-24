@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class BSClientData;
+
 @interface BSClientDetailsTableViewController : UITableViewController
+
+- (void)setCurrentClient:(BSClientData *)curentClient;
 
 @end

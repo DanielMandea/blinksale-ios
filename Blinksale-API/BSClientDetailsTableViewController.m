@@ -7,6 +7,8 @@
 //
 
 #import "BSClientDetailsTableViewController.h"
+#import "BSClientsDataSource.h"
+#import "BSClientData.h"
 
 @interface BSClientDetailsTableViewController ()
 
