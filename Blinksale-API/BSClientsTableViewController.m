@@ -9,6 +9,8 @@
 #import "BSClientsTableViewController.h"
 #import "BSClientsDataSource.h"
 #import "BSClientData.h"
+#import "BSClientTableViewCell.h"
+#import "BSClientDetailsTableViewController.h"
 
 @interface BSClientsTableViewController ()
 
@@ -55,8 +57,8 @@
     // Get current client 
     BSClientData *currentClient = [self.clients.dataSource objectAtIndex:indexPath.row];
     // Configure the cell...
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"clientCell" forIndexPath:indexPath];
-    cell.textLabel.text = currentClient.name;
+    BSClientTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"clientCell" forIndexPath:indexPath];
+    [cell setCurrentClient:currentClient];
     return cell;
 }
 
@@ -99,15 +101,16 @@
     [self loadDataSource];
 }
 
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"clientDetails"]) {
+        BSClientTableViewCell *clientCell = sender;
+        BSClientDetailsTableViewController *destinationVC = segue.destinationViewController;
+        [destinationVC setCurrentClient:clientCell.currentClient];
+    }
 }
-*/
 
 @end

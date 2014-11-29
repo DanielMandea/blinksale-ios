@@ -12,6 +12,6 @@
 
 @interface BSClientDetailsTableViewController : UITableViewController
 
-- (void)setCurrentClient:(BSClientData *)curentClient;
+- (void)setCurrentClient:(BSClientData *)currentClient;
 
 @end

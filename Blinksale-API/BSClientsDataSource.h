@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class BSClientData;
+
 @interface BSClientsDataSource : NSObject
 
 /**
@@ -39,6 +41,6 @@
  *  This array contains objects of BSCompanyData type
  */
 @property (nonatomic, strong) NSArray *dataSource;
-
+@property (nonatomic, strong) BSClientData *currentClient;
 
 @end

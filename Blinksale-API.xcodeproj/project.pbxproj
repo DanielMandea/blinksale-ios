@@ -16,6 +16,11 @@
 		A034FC7C1A2221FE0010040D /* BSClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC7B1A2221FE0010040D /* BSClientData.m */; };
 		A034FC801A222B660010040D /* NSDictionary+CheckObjectClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC7F1A222B660010040D /* NSDictionary+CheckObjectClass.m */; };
 		A034FC841A2233710010040D /* BSClientDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */; };
+		A060D5BF1A2992AC00CBBD73 /* BSClientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A060D5BE1A2992AC00CBBD73 /* BSClientTableViewCell.m */; };
+		A060D5C21A299AFF00CBBD73 /* BSPeopleData.m in Sources */ = {isa = PBXBuildFile; fileRef = A060D5C11A299AFF00CBBD73 /* BSPeopleData.m */; };
+		A060D5C51A299C9700CBBD73 /* BSPersonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A060D5C41A299C9700CBBD73 /* BSPersonData.m */; };
+		A060D5C81A29A06000CBBD73 /* BSInvoiceData.m in Sources */ = {isa = PBXBuildFile; fileRef = A060D5C71A29A06000CBBD73 /* BSInvoiceData.m */; };
+		A060D5CB1A29C8D800CBBD73 /* BSClientDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A060D5CA1A29C8D800CBBD73 /* BSClientDetailsTableViewCell.m */; };
 		A06389CA1A1E816800AF84C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06389C91A1E816800AF84C6 /* main.m */; };
 		A06389CD1A1E816900AF84C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06389CC1A1E816900AF84C6 /* AppDelegate.m */; };
 		A06389D61A1E816900AF84C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06389D41A1E816900AF84C6 /* Main.storyboard */; };
@@ -53,6 +58,16 @@
 		A034FC7F1A222B660010040D /* NSDictionary+CheckObjectClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CheckObjectClass.m"; sourceTree = "<group>"; };
 		A034FC821A2233710010040D /* BSClientDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClientDetailsTableViewController.h; sourceTree = "<group>"; };
 		A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientDetailsTableViewController.m; sourceTree = "<group>"; };
+		A060D5BD1A2992AC00CBBD73 /* BSClientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClientTableViewCell.h; sourceTree = "<group>"; };
+		A060D5BE1A2992AC00CBBD73 /* BSClientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientTableViewCell.m; sourceTree = "<group>"; };
+		A060D5C01A299AFF00CBBD73 /* BSPeopleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPeopleData.h; sourceTree = "<group>"; };
+		A060D5C11A299AFF00CBBD73 /* BSPeopleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPeopleData.m; sourceTree = "<group>"; };
+		A060D5C31A299C9700CBBD73 /* BSPersonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPersonData.h; sourceTree = "<group>"; };
+		A060D5C41A299C9700CBBD73 /* BSPersonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPersonData.m; sourceTree = "<group>"; };
+		A060D5C61A29A06000CBBD73 /* BSInvoiceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSInvoiceData.h; sourceTree = "<group>"; };
+		A060D5C71A29A06000CBBD73 /* BSInvoiceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSInvoiceData.m; sourceTree = "<group>"; };
+		A060D5C91A29C8D800CBBD73 /* BSClientDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSClientDetailsTableViewCell.h; sourceTree = "<group>"; };
+		A060D5CA1A29C8D800CBBD73 /* BSClientDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSClientDetailsTableViewCell.m; sourceTree = "<group>"; };
 		A06389C41A1E816800AF84C6 /* Blinksale-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinksale-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06389C81A1E816800AF84C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A06389C91A1E816800AF84C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,10 +154,10 @@
 			children = (
 				A034FC6F1A221C080010040D /* BSClientsTableViewController.h */,
 				A034FC701A221C080010040D /* BSClientsTableViewController.m */,
-				A034FC821A2233710010040D /* BSClientDetailsTableViewController.h */,
-				A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */,
+				A060D5BC1A29927200CBBD73 /* Custom Table View Cells */,
 				A034FC761A221CA20010040D /* BSClientsDataSource.h */,
 				A034FC771A221CA20010040D /* BSClientsDataSource.m */,
+				A060D5BB1A298DAC00CBBD73 /* Clients Details  */,
 			);
 			name = Clients;
 			sourceTree = "<group>";
@@ -152,6 +167,12 @@
 			children = (
 				A034FC7A1A2221FE0010040D /* BSClientData.h */,
 				A034FC7B1A2221FE0010040D /* BSClientData.m */,
+				A060D5C01A299AFF00CBBD73 /* BSPeopleData.h */,
+				A060D5C11A299AFF00CBBD73 /* BSPeopleData.m */,
+				A060D5C31A299C9700CBBD73 /* BSPersonData.h */,
+				A060D5C41A299C9700CBBD73 /* BSPersonData.m */,
+				A060D5C61A29A06000CBBD73 /* BSInvoiceData.h */,
+				A060D5C71A29A06000CBBD73 /* BSInvoiceData.m */,
 			);
 			name = "Blinksale Data";
 			sourceTree = "<group>";
@@ -163,6 +184,34 @@
 				A034FC7F1A222B660010040D /* NSDictionary+CheckObjectClass.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		A060D5BB1A298DAC00CBBD73 /* Clients Details  */ = {
+			isa = PBXGroup;
+			children = (
+				A060D5CC1A29C8E000CBBD73 /* Cells */,
+				A034FC821A2233710010040D /* BSClientDetailsTableViewController.h */,
+				A034FC831A2233710010040D /* BSClientDetailsTableViewController.m */,
+			);
+			name = "Clients Details ";
+			sourceTree = "<group>";
+		};
+		A060D5BC1A29927200CBBD73 /* Custom Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A060D5BD1A2992AC00CBBD73 /* BSClientTableViewCell.h */,
+				A060D5BE1A2992AC00CBBD73 /* BSClientTableViewCell.m */,
+			);
+			name = "Custom Table View Cells";
+			sourceTree = "<group>";
+		};
+		A060D5CC1A29C8E000CBBD73 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A060D5C91A29C8D800CBBD73 /* BSClientDetailsTableViewCell.h */,
+				A060D5CA1A29C8D800CBBD73 /* BSClientDetailsTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		A06389BB1A1E816800AF84C6 = {
@@ -363,14 +412,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A034FC6A1A21D07E0010040D /* BSBlinksaleAPI.m in Sources */,
+				A060D5BF1A2992AC00CBBD73 /* BSClientTableViewCell.m in Sources */,
 				A034FC711A221C080010040D /* BSClientsTableViewController.m in Sources */,
 				A034FC781A221CA20010040D /* BSClientsDataSource.m in Sources */,
 				A06389CD1A1E816900AF84C6 /* AppDelegate.m in Sources */,
+				A060D5C51A299C9700CBBD73 /* BSPersonData.m in Sources */,
+				A060D5C21A299AFF00CBBD73 /* BSPeopleData.m in Sources */,
 				A034FC6E1A22122C0010040D /* BSLoginViewController.m in Sources */,
 				A06389CA1A1E816800AF84C6 /* main.m in Sources */,
 				A034FC841A2233710010040D /* BSClientDetailsTableViewController.m in Sources */,
 				A034FC631A20C4C10010040D /* BSNetworking.m in Sources */,
 				A034FC7C1A2221FE0010040D /* BSClientData.m in Sources */,
+				A060D5CB1A29C8D800CBBD73 /* BSClientDetailsTableViewCell.m in Sources */,
+				A060D5C81A29A06000CBBD73 /* BSInvoiceData.m in Sources */,
 				A034FC801A222B660010040D /* NSDictionary+CheckObjectClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

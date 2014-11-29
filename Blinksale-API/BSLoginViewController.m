@@ -58,6 +58,10 @@
     }
 }
 
+- (IBAction)registerUser:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://application.blinksale.com/signup"]];
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

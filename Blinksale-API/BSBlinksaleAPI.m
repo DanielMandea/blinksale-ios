@@ -67,9 +67,28 @@ static NSString *const kDomain = @"blinksale.com";
     [JNKeychain saveValue:subDomain forKey:(__bridge id)kSecAttrLabel];
 }
 
-#pragma mark - Request Data 
+#pragma mark - Request Data
 
-- (void)requestDataFromURL:(NSString *)URL
+- (void)postDataToURL:(NSString *)URL requestParameters:(NSDictionary *)requestParameters
+                                       requestedContent:(NSString *)requestedContent
+                                            withSuccess:(void (^)(id))succesBlock
+                                              withError:(void (^)(NSError *))errorBlock {
+    
+    if (!URL.length) {
+        URL = [NSString stringWithFormat:@"%@/%@", self.host, requestedContent];
+    }
+    [BSNetworking requestDataFromURL:URL withRequestMethod:BSNetworkingRequestMethodPOST andParameters:requestParameters withSuccess:^(AFHTTPRequestOperation *operation, id response) {
+        NSError *error = nil;
+        NSDictionary *dict = [XMLReader dictionaryForXMLData:response
+                                                     options:XMLReaderOptionsProcessNamespaces
+                                                       error:&error];
+        succesBlock(dict);
+    } orError:^(NSError *error) {
+        errorBlock(error);
+    }];
+}
+
+- (void)getDataFromURL:(NSString *)URL
           requestedContent:(NSString *)requestedContent
                withSuccess:(void (^)(id))succesBlock
                  withError:(void (^)(NSError *))errorBlock {
@@ -87,5 +106,9 @@ static NSString *const kDomain = @"blinksale.com";
         errorBlock(error);
     }];
 }
+
+#pragma mark - Custom Resuests
+
+// TODO
 
 @end
